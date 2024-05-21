@@ -10,9 +10,9 @@ foreach ($hostname in $hostnames) {
     
     # Check if the ping was successful
     if ($pingResult) {
-        Write-Output "$hostname is reachable."
+        Write-Output "$hostname is reachable." -ForegroundColor Green
     } else {
-        Write-Output "$hostname is not reachable."
+        Write-Output "$hostname is not reachable." -ForegroundColor Red
     }
     
     Write-Output ""
